@@ -1,0 +1,39 @@
+Фронт:
+    Основні сторінки:
+        - Головна
+        - Усі роботи
+        - Про мене
+        - Контакти
+        - Адмінка(hidden)
+
+    Посилання на дизайн:
+        - https://demos.freehtml5.co/marble/index.html
+        - http://kv2-site.ru/
+        - https://demos.freehtml5.co/profile/
+
+    Шрифт:
+        - FiraCode
+        - Roboto
+
+Бек:
+    Таблиці:
+        - works
+            - id
+            - title
+            - description
+            - status
+            - img
+            - url
+        - likes
+            - id
+            - ip
+            - status
+        - comments
+            - id
+            - email
+            - text
+            - status
+        
+    Примітки:
+        - Хочу реалізувати прев'ю роботи з посиланням на неї. 
+        Можливість лайкати і коментувати

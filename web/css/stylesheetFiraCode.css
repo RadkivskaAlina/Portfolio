@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Fira Code Retina';
+    src: url('FiraCode-Retina.eot');
+    src: local('Fira Code Retina'), local('FiraCode-Retina'),
+        url('FiraCode-Retina.eot?#iefix') format('embedded-opentype'),
+        url('FiraCode-Retina.woff2') format('woff2'),
+        url('FiraCode-Retina.woff') format('woff'),
+        url('FiraCode-Retina.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fira Code';
+    src: url('FiraCode-Bold.eot');
+    src: local('Fira Code Bold'), local('FiraCode-Bold'),
+        url('FiraCode-Bold.eot?#iefix') format('embedded-opentype'),
+        url('FiraCode-Bold.woff2') format('woff2'),
+        url('FiraCode-Bold.woff') format('woff'),
+        url('FiraCode-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fira Code';
+    src: url('FiraCode-Medium.eot');
+    src: local('Fira Code Medium'), local('FiraCode-Medium'),
+        url('FiraCode-Medium.eot?#iefix') format('embedded-opentype'),
+        url('FiraCode-Medium.woff2') format('woff2'),
+        url('FiraCode-Medium.woff') format('woff'),
+        url('FiraCode-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fira Code';
+    src: url('FiraCode-Regular.eot');
+    src: local('Fira Code Regular'), local('FiraCode-Regular'),
+        url('FiraCode-Regular.eot?#iefix') format('embedded-opentype'),
+        url('FiraCode-Regular.woff2') format('woff2'),
+        url('FiraCode-Regular.woff') format('woff'),
+        url('FiraCode-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fira Code';
+    src: url('FiraCode-Light.eot');
+    src: local('Fira Code Light'), local('FiraCode-Light'),
+        url('FiraCode-Light.eot?#iefix') format('embedded-opentype'),
+        url('FiraCode-Light.woff2') format('woff2'),
+        url('FiraCode-Light.woff') format('woff'),
+        url('FiraCode-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+

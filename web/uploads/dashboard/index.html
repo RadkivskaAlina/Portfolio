@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header_wrapper">
+                <div class="header_logo">
+                    <a href=""><img src="img/Emblem.png" alt=""></a>
+                </div>
+                <div class="header_list">
+                    <a href="#">+ Add User</a>
+                    <a href="#" class="active">User Preferences</a>
+                    <a href="#">Settings</a>
+                </div>
+                <div class="header_search">
+                    <a href="#"><img src="img/Search.png" alt=""></a>
+                    <input type="text" class="header_search_input">
+                </div>
+                <div class="header_user">
+                    <div class="header_user_avatar">
+                        <img src="img/Avatar.png" alt="">
+                        <p class="header_user_avatar_messages">2</p>
+                    </div>
+                    <div class="header_user_name"><p>Aaron Sananes</p></div>
+                    <img src="img/Arrow.png" alt="" class="header_user_avatar_arrow">
+                    <div class="header_user_bottom">
+                        <div class="header_user_bottom_profile">
+                            <img src="img/Avatar.png" alt="">
+                            <div class="header_user_bottom_profile_text">
+                                <p class="header_user_bottom_profile_name">Aaron Sananes</p>
+                                <p class="header_user_bottom_profile_email">aaron@email.com</p>
+                            </div>
+                        </div>
+                        <a href="" class="header_user_bottom_profile_btn">View Profile</a>
+                        <div class="header_user_bottom_list">
+                            <ul>
+                                <li><a>Profile</a></li>
+                                <li><a>Messages</a></li>
+                                <li><a>Settings</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="menu">
+            <div class="menu_wrapper">
+                <a href="#/" class="menu_btn"><img src="img/Dashboard.png" alt=""></a>
+                <a href="#/profile" class="menu_btn"><img src="img/Profile.png" alt=""></a>
+                <a href="#/write" class="menu_btn"><img src="img/Write.png" alt=""></a>
+                <a href="#/calendar" class="menu_btn"><img src="img/Calendar.png" alt=""></a>
+                <a href="#/notes" class="menu_btn"><img src="img/Notes.png" alt=""></a>
+                <a href="#/comments" class="menu_btn"><img src="img/Comments.png" alt=""></a>
+                <a href="#/graphs" class="menu_btn"><img src="img/Graph.png" alt=""></a>
+                <div class="active_menu_btn"></div>
+            </div>
+        </section>
+        <section class="content">
+            <div class="content_wrapper" id="app">
+                <div class="content_title">
+                    <p><router-view></router-view></p>
+                    <img src="img/Icon.png" alt="">
+                </div>
+                <div class="changed_content">
+                    <div class="content_counts">
+                        <div class="content_counts_item">
+                            <div class="content_counts_item_number">
+                                <p>267</p>
+                            </div>
+                            <div class="content_counts_item_text">
+                                <p>Online Players</p>
+                            </div>
+                        </div>
+                        <div class="content_counts_item">
+                            <div class="content_counts_item_number">
+                                <p>1890</p>
+                            </div>
+                            <div class="content_counts_item_text">
+                                <p>Hours played</p>
+                            </div>
+                        </div>
+                        <div class="content_counts_item">
+                            <div class="content_counts_item_number">
+                                <p>22</p>
+                            </div>
+                            <div class="content_counts_item_text">
+                                <p>New Tournaments</p>
+                            </div>
+                        </div>
+                        <div class="content_counts_item">
+                            <div class="content_counts_item_number">
+                                <p>16</p>
+                            </div>
+                            <div class="content_counts_item_text">
+                                <p>Lifetime Fails</p>
+                            </div>
+                        </div>
+                        <div class="content_counts_item">
+                            <div class="content_counts_item_number">
+                                <p>6544</p>
+                            </div>
+                            <div class="content_counts_item_text">
+                                <p>Comments</p>
+                            </div>
+                        </div>
+                        <div class="content_counts_item">
+                            <div class="content_counts_item_number">
+                                <p>568 </p>
+                            </div>
+                            <div class="content_counts_item_text">
+                                <p>Games Played</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_graphs">
+                        <div class="content_graphs_item">
+                            <p class="content_graphs_title">
+                                Active Players
+                            </p>
+                            <canvas id="players" width="600" height="350"></canvas>
+                        </div>
+                        <div class="content_graphs_item">
+                            <p class="content_graphs_title">
+                                Active Tournaments
+                            </p>
+                            <canvas id="tournaments" width="600" height="350"></canvas>
+                        </div>
+                    </div>
+                    <div class="content_players">
+                        <div class="players_list">
+                            <p class="players_list_title">
+                                Resent Players
+                            </p>
+                            <div class="player_list_items">
+                                <div class="player_list_item">
+                                    <img src="img/Layer 2.png" alt="">
+                                    <div class="player_list_text">
+                                        <p class="player_list_name">Dyril Ginn</p>
+                                        <p class="player_list_country">United Kingdom</p>
+                                    </div>
+                                </div>
+                                <div class="player_list_item">
+                                    <img src="img/Layer 3.png" alt="">
+                                    <div class="player_list_text">
+                                        <p class="player_list_name">Dyril Ginn</p>
+                                        <p class="player_list_country">United Kingdom</p>
+                                    </div>
+                                </div>
+                                <div class="player_list_item">
+                                    <img src="img/Avatar.png" alt="">
+                                    <div class="player_list_text">
+                                        <p class="player_list_name">Dyril Ginn</p>
+                                        <p class="player_list_country">United Kingdom</p>
+                                    </div>
+                                </div>
+                                <div class="player_list_item">
+                                    <img src="img/Layer 4.png" alt="">
+                                    <div class="player_list_text">
+                                        <p class="player_list_name">Dyril Ginn</p>
+                                        <p class="player_list_country">United Kingdom</p>
+                                    </div>
+                                </div>
+                                <div class="player_list_item">
+                                    <img src="img/Avatar.png" alt="">
+                                    <div class="player_list_text">
+                                        <p class="player_list_name">Dyril Ginn</p>
+                                        <p class="player_list_country">United Kingdom</p>
+                                    </div>
+                                </div>
+                                <div class="player_list_item">
+                                    <img src="img/Layer 3.png" alt="">
+                                    <div class="player_list_text">
+                                        <p class="player_list_name">Dyril Ginn</p>
+                                        <p class="player_list_country">United Kingdom</p>
+                                    </div>
+                                </div>
+                                <div class="player_list_item">
+                                    <img src="img/Avatar.png" alt="">
+                                    <div class="player_list_text">
+                                        <p class="player_list_name">Dyril Ginn</p>
+                                        <p class="player_list_country">United Kingdom</p>
+                                    </div>
+                                </div>
+                                <div class="player_list_item">
+                                    <img src="img/Layer 2.png" alt="">
+                                    <div class="player_list_text">
+                                        <p class="player_list_name">Dyril Ginn</p>
+                                        <p class="player_list_country">United Kingdom</p>
+                                    </div>
+                                </div>
+                                <div class="player_list_item">
+                                    <img src="img/Layer 3.png" alt="">
+                                    <div class="player_list_text">
+                                        <p class="player_list_name">Dyril Ginn</p>
+                                        <p class="player_list_country">United Kingdom</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="players_statistic">
+                            <p class="players_statistic_title">
+                                Players Statistic
+                            </p>
+                            <div class="players_statistic_items">
+                                <div class="players_statistic_item">
+                                    <canvas id="new" width="130" height="130"></canvas>
+                                    <p class="players_statistic_number">58%</p>
+                                    <p class="players_statistic_text">
+                                        New Players
+                                    </p>
+                                </div>
+                                <div class="players_statistic_item">
+                                    <canvas id="revisited" width="130" height="130"></canvas>
+                                    <p class="players_statistic_number">75%</p>
+                                    <p class="players_statistic_text">
+                                        Revisited
+                                    </p>
+                                </div>
+                                <div class="players_statistic_item">
+                                    <canvas id="commented" width="130" height="130"></canvas>
+                                    <p class="players_statistic_number">28%</p>
+                                    <p class="players_statistic_text">
+                                        Commented
+                                    </p>
+                                </div>
+                                <div class="players_statistic_item">
+                                    <canvas id="active" width="130" height="130"></canvas>
+                                    <p class="players_statistic_number">97%</p>
+                                    <p class="players_statistic_text">
+                                        Active Palyers
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_wrapper">
+        </div>
+    </footer>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script> 
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="js/charts.js"></script>
+</body>
+</html>
